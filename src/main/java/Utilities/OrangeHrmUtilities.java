@@ -50,7 +50,7 @@ public class OrangeHrmUtilities {
 
 
     private  void setFileProperties() throws IOException {
-        FileInputStream inputStream = new FileInputStream("C:\\Incubation\\CucumberFramework\\src\\test\\resources\\file.properties");
+        FileInputStream inputStream = new FileInputStream("C:\\github\\Cucumber\\src\\test\\resources\\file.properties");
         properties = new Properties();
         properties.load(inputStream);
     }
@@ -58,7 +58,7 @@ public class OrangeHrmUtilities {
     public void  takeScreenshot(String name) throws IOException {
         TakesScreenshot screenshot= (TakesScreenshot) getDriver();
         File srcFile=screenshot.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(srcFile,new File("C:\\Incubation\\CucumberFramework\\target\\logs\\"+name+".png"));
+        FileUtils.copyFile(srcFile,new File("C:\\github\\Cucumber\\target\\logs"+name+".png"));
     }
 
 
