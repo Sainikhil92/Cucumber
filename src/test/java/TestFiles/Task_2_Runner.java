@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 @CucumberOptions(
         features = "src/test/resources/FeaturesFile/Task2_featurefile.feature",
         glue = {"Step_def","PageObjects","Utilities"},monochrome = true,
-        plugin = {"pretty","html:target/cucumber-reports.html"}
+        plugin = {"pretty","json:target/cucumber-json-reports/cucumber.json","html:target/cucumber-reports.html"}
 
 )
 @Test
