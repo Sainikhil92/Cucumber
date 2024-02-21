@@ -1,3 +1,3 @@
 @echo off
-mvn test
+mvn clean install
 pause
